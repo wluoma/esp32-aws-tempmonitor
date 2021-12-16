@@ -1,0 +1,22 @@
+#ifndef KEYS_h
+#define KEYS_h
+
+namespace keys
+{
+    const char *CACert{R"RAWTEXT(-----BEGIN CERTIFICATE-----
+
+-----END CERTIFICATE-----
+)RAWTEXT"};
+
+    const char *deviceCert{R"RAWTEXT(-----BEGIN CERTIFICATE-----
+
+-----END CERTIFICATE-----
+)RAWTEXT"};
+
+    const char *privateRSAKey{R"RAWTEXT(-----BEGIN RSA PRIVATE KEY-----
+
+-----END RSA PRIVATE KEY-----
+)RAWTEXT"};
+
+}
+#endif

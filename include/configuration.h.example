@@ -1,0 +1,24 @@
+#ifndef CONFIGURATION_h
+#define CONFIGURATION_h
+
+#define BAUDRATE 115200
+
+// WiFi
+#define WIFI_SSID "Your_SSID"
+#define WIFI_PASSWORD "Your_PASSWORD"
+#define WIFI_HOSTNAME "Hostname_for_device"
+
+// MQTT Server
+#define MQTT_HOST "account-specific-prefix.iot.aws-region.amazonaws.com"
+#define MQTT_USERNAME "mqttusername"
+#define MQTT_PORT 8883
+#define MQTT_THING "thingname_iotcore"
+
+// MQTT topics to send / subscribe
+#define MQTT_TOPIC_SEND "tempmonitor/temperature"
+#define MQTT_TOPIC_CMD "tempmonitor/cmd"
+
+// How often should readings be published (in milliseconds)
+#define PUBLISH_DELAY 300000
+
+#endif
