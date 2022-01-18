@@ -155,6 +155,7 @@ void publishTemperature()
   sprintf(payload, "%s %s", payload, str_time);
   sprintf(payload, "%s }", payload);
 
+  // Try to publish to MQTT
   if (mqttClient.publish(MQTT_TOPIC_SEND, payload))
   {
     Serial.println(" --- Published to MQTT --- ");
